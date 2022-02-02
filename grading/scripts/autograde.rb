@@ -187,12 +187,12 @@ when "clone_repos"
     if Dir.exist? student_dir
       puts "Directory #{student_dir} already exists, skipping..."
     else
-      repo_url = student["REPO"].gsub("https://", "")
+      repo_url = student["REPO"]&.gsub("https://", "")
       if repo_url.nil? || repo_url.strip.empty?
         puts("No git URL for #{student["FIRST_NAME"]} #{student["LAST_NAME"]}")
         next
       end
-      `git clone https://#{git_username}:#{git_token}@#{repo_url} repos/#{student_dir}`
+      `git clone https://#{git_username}:#{git_token}@#{repo_url} repos/#{student_dir} --branch master`
     end
   end
 when "clear_repos"
