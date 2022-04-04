@@ -4,6 +4,13 @@ This document should be used to create a guide for catscript, to satisfy capston
 
 ## Introduction
 
+Catscript is a simple scripting langauge.  Here is an example:
+
+```
+var x = "foo"
+print(x)
+```
+
 ## Features
 
 ### For loops
