@@ -1,7 +1,7 @@
 # Capstone Documentation Instructions
 
 Please add the following items to the `/capstone/portfolio` directory and ensure they are 
-pushed up by Monday, May 3rd
+pushed up by Friday, May 6th
 
 * A zip file of the `/src` director named `/capstone/portfolio/source.zip`
 * A PDF named `/capstone/portfolio/<first_name>_<last_name>_portfolio.pdf` where
